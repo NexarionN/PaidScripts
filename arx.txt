@@ -1,0 +1,46 @@
+getgenv().arex = getgenv().arex or {}
+local arex = getgenv().arex
+
+arex.camlock = {
+    enabled = true,
+    target = nil,
+    targetPart = "HumanoidRootPart",
+    prediction = 0.159,
+    jumpOffset = 0.25,
+    smoothness = 0.23
+}
+
+arex.autoair = {
+	enabled = true,
+	cooldown = 0.2,
+	targetPart = "HumanoidRootPart",
+	lastShotTime = 0
+}
+
+arex.autopred = {
+    enabled = false
+}
+
+arex.cframe = {
+    enabled = true,
+    showbutton = true,
+    speed = 2
+}
+    
+arex.orbit = {
+    enabled = false,
+    distance = 10,
+    speed = 400,
+    height = 5,
+    angle = 0
+}
+
+arex.targetaim = {
+    Enabled = true,
+    Method = "Namecall", -- Namecall or Index
+    Target = nil,
+    Part = "HumanoidRootPart",
+    Prediction = 0.1559
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NexarionN/PaidScripts/main/87289766yyuauruxArex.txt"))()
